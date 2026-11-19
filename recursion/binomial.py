@@ -1,5 +1,4 @@
 from time import time
-
 import scipy
 
 c = 0

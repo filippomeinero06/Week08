@@ -1,4 +1,3 @@
-
 class Quicksort():
     def sort(self, sequenza):
         if len(sequenza)<=1: # Condizione uscita dalla ricorsione

@@ -1,3 +1,6 @@
+import copy
+
+
 class Nqueens():
     def __init__(self):
         self._num_solutions = 0
@@ -11,7 +14,7 @@ class Nqueens():
         if len(partial_sol) == N:
             # Prima di considerare buona una soluzione, mi chiedo se per caso non l'abbia già trovata
             if self._solution_is_good(partial_sol):
-                self._solutions.append(list(partial_sol))
+                self._solutions.append(copy.deepcopy(partial_sol)) # Creo una copia "profonda" della soluzione
                 print(partial_sol)
                 self._num_solutions += 1
             return
